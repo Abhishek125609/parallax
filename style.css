@@ -1,0 +1,35 @@
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.mountain{
+    transform: translateZ(-60px) scale(7);
+}
+.forward{
+    transform: translateZ(-30px) scale(4);
+}
+.mountain, .forward{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+.hed{
+    font-size: 100px;
+    font-weight: 10rem;
+    transform: translateZ(-10px) scale(2);
+    top: 100rem;
+    color: white;
+}
